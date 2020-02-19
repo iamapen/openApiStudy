@@ -86,3 +86,10 @@ java -jar /generator/modules/openapi-generator-cli/target/openapi-generator-cli.
 ```bash
 java -jar /generator/modules/openapi-generator-cli/target/openapi-generator-cli.jar list
 ```
+
+
+
+# SwaggerUI と SwaggerEditor も
+
+- [Swagger UI](http://localhost:9001)
+- [Swagger Editor](http://localhost:9002)

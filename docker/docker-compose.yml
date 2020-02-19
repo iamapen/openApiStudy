@@ -6,3 +6,17 @@ services:
       - ..:/app
     tty: true
     command: sh
+
+  swagger-ui:
+    image: swaggerapi/swagger-ui
+    volumes:
+      - ../src/fuga.yml:/usr/share/nginx/html/openapi.yml
+    environment:
+      API_URL: openapi.yml
+    ports:
+      - "9001:8080"
+
+  swagger-editor:
+    image: swaggerapi/swagger-editor
+    ports:
+      - "9002:8080"
